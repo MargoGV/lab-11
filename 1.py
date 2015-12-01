@@ -1,7 +1,8 @@
 class Point:
-	def __init__(self, other, x = 0, y = 0):
-		self.x = x
-		self.y = y
+	def __init__(self, st='0,0',ms=1):
+		self.x = float(st[:st.index(,)])
+		self.y = float(st[st.index(,)+1:]
+		sels.ms=ms
 	def  __str__(self):
 		return str(self.x) + str(self.y)
 	def __lt__(self, other):
